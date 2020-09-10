@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="sidp">4dp</dimen>
+    <dimen name="wudp">5dp</dimen>
+    <dimen name="badp">8dp</dimen>
+    <dimen name="shidp">10dp</dimen>
+    <dimen name="shiwudp">15dp</dimen>
+    <dimen name="shibadp">18dp</dimen>
+    <dimen name="ershidp">20dp</dimen>
+    <dimen name="ershierdp">22dp</dimen>
+    <dimen name="ershisandp">23dp</dimen>
+    <dimen name="ershiwudp">25dp</dimen>
+    <dimen name="ershibadp">28dp</dimen>
+    <dimen name="sishidp">40dp</dimen>
+    <dimen name="wushidp">50dp</dimen>
+    <dimen name="liushidp">60dp</dimen>
+    <dimen name="jiushidp">90dp</dimen>
+    <dimen name="yibaidp">100dp</dimen>
+    <dimen name="yibaiwudp">150dp</dimen>
+    <dimen name="erbaidp">200dp</dimen>
+    <dimen name="sanbaidp">300dp</dimen>
+    <dimen name="sanbaisidp">340dp</dimen>
+</resources>

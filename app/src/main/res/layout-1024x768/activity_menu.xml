@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sea"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/menu"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/erbaidp"
+        android:gravity="center"
+        android:text="@string/new_game"
+        android:textSize="@dimen/ershiwudp"
+        android:textColor="@color/textcolor_white"
+        android:textAllCaps="false"
+        android:background="@color/transparent"/>
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/ranks"
+        android:textSize="@dimen/ershiwudp"
+        android:textColor="@color/textcolor_white"
+        android:textAllCaps="false"
+        android:background="@color/transparent"/>
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/setting"
+        android:textSize="@dimen/ershiwudp"
+        android:textColor="@color/textcolor_white"
+        android:textAllCaps="false"
+        android:background="@color/transparent"/>
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/help"
+        android:textSize="@dimen/ershiwudp"
+        android:textColor="@color/textcolor_white"
+        android:textAllCaps="false"
+        android:background="@color/transparent"/>
+
+    <Button
+        android:id="@+id/btback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ershidp"
+        android:text="@string/back_up"
+        android:textSize="@dimen/ershibadp"
+        android:textColor="@color/textcolor_white"
+        android:background="@color/transparent"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/foot"
+        android:textSize="@dimen/shibadp"
+        android:textColor="@color/textcolor_black"/>
+</LinearLayout>

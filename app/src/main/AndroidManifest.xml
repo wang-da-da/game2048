@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wdd.new2048">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permissio.INSTALL_SHORTCUT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/newlogo"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".MyProvider"
+            android:authorities="com.wdd.new2048.provider"
+            android:enabled="true"
+            android:exported="true"></provider>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+    singleTask   When we start the Activity, the Android system first checks whether there is an instance object of this Activity in the Task.
+        If existence : The Android system will directly route the intent to the Activity instance object that exists in that Task, and will process it
+                        by calling the onNewIntent() method instead of creating a new Activity instance object. Then it will clean up other activities on it.
+        If doesn't exist : It is for sure to create an Activity instance object.
+        -->
+        <activity
+            android:name=".MenuActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".HelpActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wdd.new2048.RankActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.wdd.new2048.VIEW_URL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme"
+            android:screenOrientation="portrait"/>
+
+        <receiver
+            android:name=".DesktopApp"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider" />
+        </receiver>
+    </application>
+
+</manifest>

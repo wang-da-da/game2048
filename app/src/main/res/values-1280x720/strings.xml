@@ -1,0 +1,59 @@
+<resources>
+<!--    LoginActivity-->
+    <string name="app_name">New 2048</string>
+    <string name="title_activity_login">登录</string>
+    <string name="input_name">请输入您的名字 ：</string>
+    <string name="login">登录</string>
+    <string name="no_blank">用户名不能为空！</string>
+<!--    MenuActivity-->
+    <string name="new_game">新的游戏</string>
+    <string name="ranks">排行榜</string>
+    <string name="setting">设置</string>
+    <string name="help">帮助</string>
+<!--    MainActivity-->
+    <string name="username">名字 ： </string>
+    <string name="score">分数 ： </string>
+    <string name="highest_score">历史最高分 ： </string>
+    <string name="action">开始</string>
+    <string name="pause">暂停</string>
+    <string name="go_on">继续</string>
+    <string name="restart">重新开始</string>
+    <string name="exit">退出</string>
+    <string name="foot">最棒的版本</string>
+<!--    HelpActivity-->
+    <string name="operation">\t\t\t\t操作 : 通过手指在手机屏幕上滑动，控制方块卡片的移动。游戏界面内拥有语言设置选项，可选择中文或英文，拥有控制计时器的开始，暂停/继续，重新开始按钮。</string>
+    <string name="description">\t\t\t\t说明：进入游戏，初始界面会在方格内随机产生三个卡片，通过玩家的手势操作可实现卡片的移动方向，若相同卡片发生碰撞后，会合并成高一级卡片，而不同卡片发生碰撞，则会依靠相邻。卡片移动成功后，游戏会在空白方块内再次生成一张卡片，用于合成高一级卡片。当游戏内没有可通过移动发生碰撞的相同卡片以及没有空白方块时，代表游戏结束。玩家可在游戏界面查看最高分记录和自己当前分数，并且可以排行榜中查看历史分数，排行榜内共保存十条历史记录。</string>
+    <string name="back_up">返回</string>
+<!--    RankActivity-->
+    <string name="rank">序号</string>
+    <string name="name">名字</string>
+    <string name="score_rank">分数</string>
+    <string name="diff_rank">难度</string>
+<!--    SettingActivity-->
+    <string name="choice_music">请选择背景音乐 : </string>
+    <string name="metu">静音</string>
+    <string name="ding">叮</string>
+    <string name="baji">吧唧</string>
+    <string name="shua">唰</string>
+    <string name="vibrator">设置开启震动：</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="diff">选择游戏难度：</string>
+    <string name="difficult">难</string>
+    <string name="medium">中</string>
+    <string name="easy">简单</string>
+    <string name="clear_rank">清楚排行榜数据！</string>
+    <string name="cleared_rank">排行榜中数据已删除！</string>
+    <string name="clear_rank_success">删除数据成功！</string>
+    <string name="cds">创建桌面快捷方式</string>
+<!--    Menu-->
+    <string name="Chinese">中文</string>
+    <string name="English">English</string>
+
+<!--    Dialog-->
+    <string name="dialog_title">您好，玩家</string>
+    <string name="dialog_message">游戏结束 ! ! !\n祝您拥有愉快的游戏体验 !</string>
+    <string name="dialog_continue">您是否要继续游戏？</string>
+    <string name="dialog_savegame">您是否要保存游戏进度，以便下次游戏继续？</string>
+    <string name="save">保存</string>
+</resources>
