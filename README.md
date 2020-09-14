@@ -1,2 +1,2 @@
-# gmae2048
+# game2048
 mobiwire-internee
